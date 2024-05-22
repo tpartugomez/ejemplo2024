@@ -8,6 +8,16 @@ header {
     background-color: #f0f0f0;
     padding: 20px;
 }
+header .banner-contenedor {
+    width: 100%; /* El ancho del contenedor será el 100% del ancho del header */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción de la imagen */
+    overflow: hidden; /* Oculta la parte de la imagen que se salga del contenedor */
+}
+
+header .banner-contenedor img {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
 
 h1 {
     text-align: center;

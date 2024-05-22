@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.entradas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.entrada {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.entrada img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.entrada h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+/*   Explicacion de la diferencia en css para que sea responsive repeat(auto-fit): Distribuye las entradas en tantas columnas como quepan en el ancho disponible.
+minmax(250px, 1fr): Cada columna tendrá un ancho mínimo de 250px, pero se expandirá para ocupar el espacio restante de manera uniforme.
+
+
+max-width: 100%: La imagen ocupará el ancho completo de su contenedor.
+height: auto: La altura de la imagen se ajustará proporcionalmente para mantener la relación de aspecto original.
+*/

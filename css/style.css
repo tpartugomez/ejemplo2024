@@ -1,0 +1,89 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #dddada;
+    padding:20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;  /*3fr: La primera columna ocupará 3 partes flexibles (fr) del espacio disponible.
+    1fr: La segunda columna ocupará 1 parte flexible del espacio disponible.*/
+    gap: 20px;  /* establece un espacio de 20px entre los elementos del grid (entradas y aside).*/
+    padding: 20px;
+}
+
+.entradas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    /*Repite la siguiente regla tantas veces como quepan elementos en una fila sin que se desborden.*/
+    /*minmax(300px, 1fr): Cada columna tendrá un ancho mínimo de 300px, pero se expandirá para ocupar el espacio restante de manera uniforme hasta llenar una fila.*/
+    gap: 20px;
+}
+
+.entrada {
+    background-color: #ebe2e2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.entrada img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.entrada h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    
+}
+
+.entrada h2 a {
+    color: #111213; /* Color  */
+    text-decoration: none; /* Elimina el subrayado */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial */
+    font-size: 20px; /* Cambia el tamaño de la fuente a 14px */ 
+    
+}
+
+
+.entrada a.leer-mas {
+    color: #007bff; /* Color azul */
+    text-decoration: none; /* Elimina el subrayado */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial */
+    font-size: 14px; /* Cambia el tamaño de la fuente a 14px */
+    padding: 5px 10px; /* Agrega espacio alrededor del texto */
+    border: 1px solid #007bff; /* Agrega un borde azul */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Efecto de transición al pasar el cursor */
+  }
+
+ 

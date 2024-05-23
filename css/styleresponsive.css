@@ -105,6 +105,12 @@ main {
     font-size: 10px; /* Cambia el tamaño de la fuente a 10px */ 
     }
 
+.nota {
+    color: #19191a; /* Color  */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial */
+    font-size: 12x; /* Cambia el tamaño de la fuente a 12px */  
+}    
+
 /*   Explicacion de la diferencia en css para que sea responsive repeat(auto-fit): Distribuye las entradas en tantas columnas como quepan en el ancho disponible.
 minmax(250px, 1fr): Cada columna tendrá un ancho mínimo de 250px, pero se expandirá para ocupar el espacio restante de manera uniforme.
 

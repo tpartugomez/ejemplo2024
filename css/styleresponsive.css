@@ -108,7 +108,8 @@ main {
 .nota {
     color: #19191a; /* Color  */
     font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial */
-    font-size: 12x; /* Cambia el tamaño de la fuente a 12px */  
+    font-size: 11x; /* Cambia el tamaño de la fuente a 12px */ 
+    text-align: justify; 
 }    
 
 /*   Explicacion de la diferencia en css para que sea responsive repeat(auto-fit): Distribuye las entradas en tantas columnas como quepan en el ancho disponible.

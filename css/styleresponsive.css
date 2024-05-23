@@ -91,6 +91,14 @@ main {
     border-radius: 5px; /* Bordes redondeados */
     transition: background-color 0.3s; /* Efecto de transición al pasar el cursor */
   }
+
+  .novedades a {
+    color: #111213; /* Color  */
+    text-decoration: none; /* Elimina el subrayado */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial */
+    font-size: 10px; /* Cambia el tamaño de la fuente a 14px */ 
+    
+}
 /*   Explicacion de la diferencia en css para que sea responsive repeat(auto-fit): Distribuye las entradas en tantas columnas como quepan en el ancho disponible.
 minmax(250px, 1fr): Cada columna tendrá un ancho mínimo de 250px, pero se expandirá para ocupar el espacio restante de manera uniforme.
 
